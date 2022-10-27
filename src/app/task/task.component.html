@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Work task</mat-card-title>
+  <mat-card-subtitle>ID: {{ taskId }}</mat-card-subtitle>
+  <mat-card-content>
+    <p><b>Title:</b> {{ item?.title }}</p>
+    <p><b>Employee:</b> {{ item?.employee }}</p>
+    <p><b>Is need script:</b> {{ item?.isNeedScripts }}</p>
+    <p><b>State:</b> {{ item?.state }}</p>
+    <p><b>Hours:</b> {{ item?.hours }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div class="button">
+      <button mat-raised-button color="accent" (click)="deployTasks()">
+        Deploy
+      </button>
+    </div>
+  </mat-card-actions>
+</mat-card>
